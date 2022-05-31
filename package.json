@@ -3,16 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-hook/window-size": "^3.0.7",
+    "@svgdotjs/svg.js": "^3.0.16",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
+    "@types/react": "^17.0.0",
     "@types/react-dom": "^16.9.8",
+    "node-sass": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "text-to-svg": "^3.1.5",
+    "ts-node": "^9.0.0",
+    "two.js": "^0.7.0-stable.1",
+    "twojs-ts": "^0.7.0-13",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
@@ -20,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "convert": "node ./scripts/convert.js"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/text-to-svg": "^3.1.0",
+    "@types/two.js": "^0.7.3"
   }
 }
